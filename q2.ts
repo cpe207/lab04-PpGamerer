@@ -1,5 +1,5 @@
-function arrayStringify(a: number[] | any[]): string {
-  let b: any[] = [];
+function arrayStringify(a: number[]): string {
+  let b: number[] = [];
   b = b.concat(a);
 
   let c:string = "";
