@@ -1,5 +1,12 @@
-function typeChecker(a, b) {
-  /* Your code here */
+function typeChecker(a:string | number, b:string | number):string | number{
+  if (typeof a === typeof b){
+    if(typeof a === 'string' && typeof b === 'string'){
+      return "I LOVE YOU";
+    }else if(typeof a === 'number' && typeof b === 'number'){
+      return a + b;
+    }
+  }else return "NOT MATCHED";
+  return 0; 
 }
 
 //Test cases
@@ -15,3 +22,7 @@ console.log(typeChecker(a2, b2));
 console.log(typeChecker(a3, b3));
 
 module.exports = typeChecker;
+
+/*รหัส นศ.: 660610779
+
+ชื่อ-สกุล : พิมลนาฏ แก้วบุตร*/

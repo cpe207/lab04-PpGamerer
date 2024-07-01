@@ -1,5 +1,12 @@
-function arrayStringify(a) {
-  /* Your code here */
+function arrayStringify(a: number[] | any[]): string {
+  let b: any[] = [];
+  b = b.concat(a);
+
+  let c:string = "";
+  for(let i:number = 0; i < b.length;i++) {
+    c += b[i].toString();
+  }
+  return c;
 }
 
 const c1 = [1, 2, 3];
@@ -11,3 +18,7 @@ console.log(arrayStringify(c2));
 console.log(arrayStringify(c3));
 
 module.exports = arrayStringify;
+
+/*รหัส นศ.: 660610779
+
+ชื่อ-สกุล : พิมลนาฏ แก้วบุตร*/

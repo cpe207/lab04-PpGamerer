@@ -1,6 +1,14 @@
-function primeNumber(a) {
-  /* Your code here */
-}
+function primeNumber(a: number): string {
+  if(a < 2) {return "NO";
+  }else {
+    for (let i:number = 2; i < a; i++) {
+      if (a % i === 0) {
+        return "NO"; 
+      }
+    }
+    return "YES"; 
+  }
+  }
 
 const d1 = 10;
 const d2 = 29;
@@ -11,3 +19,7 @@ console.log(primeNumber(d2));
 console.log(primeNumber(d3));
 
 module.exports = primeNumber;
+
+/*รหัส นศ.: 660610779
+
+ชื่อ-สกุล : พิมลนาฏ แก้วบุตร*/
